@@ -12,6 +12,8 @@
 		9796551C2589A0E900F88D7B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9796551B2589A0E900F88D7B /* CloudKit.framework */; };
 		9796551E2589A28400F88D7B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9796551D2589A28400F88D7B /* HomeView.swift */; };
 		979655222589A3C200F88D7B /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979655212589A3C200F88D7B /* ProjectsView.swift */; };
+		979655372589D5A700F88D7B /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */; };
+		9796553A2589D60C00F88D7B /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */; };
 		97E604DD2580E37600FD24B2 /* DannyThiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */; };
 		97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E604DE2580E37600FD24B2 /* ContentView.swift */; };
 		97E604E12580E37800FD24B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E604E02580E37800FD24B2 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		9796551B2589A0E900F88D7B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9796551D2589A28400F88D7B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		979655212589A3C200F88D7B /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		97E604D92580E37500FD24B2 /* DannyThiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DannyThiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DannyThiAppApp.swift; sourceTree = "<group>"; };
 		97E604DE2580E37600FD24B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				9796551D2589A28400F88D7B /* HomeView.swift */,
 				979655212589A3C200F88D7B /* ProjectsView.swift */,
 				9796551525899ADC00F88D7B /* DataController.swift */,
+				979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */,
+				979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */,
 				979655112589972D00F88D7B /* Main.xcdatamodeld */,
 				97E604E02580E37800FD24B2 /* Assets.xcassets */,
 				97E604E52580E37800FD24B2 /* Info.plist */,
@@ -166,10 +172,12 @@
 			files = (
 				979655222589A3C200F88D7B /* ProjectsView.swift in Sources */,
 				979655132589972E00F88D7B /* Main.xcdatamodeld in Sources */,
+				9796553A2589D60C00F88D7B /* Project-CoreDataHelpers.swift in Sources */,
 				9796551625899ADC00F88D7B /* DataController.swift in Sources */,
 				97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */,
 				9796551E2589A28400F88D7B /* HomeView.swift in Sources */,
 				97E604DD2580E37600FD24B2 /* DannyThiAppApp.swift in Sources */,
+				979655372589D5A700F88D7B /* Item-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
