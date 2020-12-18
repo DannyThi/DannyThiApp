@@ -16,6 +16,8 @@
 		9796553A2589D60C00F88D7B /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */; };
 		9796553D2589DC9000F88D7B /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9796553C2589DC9000F88D7B /* EditItemView.swift */; };
 		979655402589E37600F88D7B /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9796553F2589E37600F88D7B /* Binding-OnChange.swift */; };
+		97965543258C808C00F88D7B /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97965542258C808C00F88D7B /* ProjectHeaderView.swift */; };
+		97965546258C8B9400F88D7B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97965545258C8B9400F88D7B /* Colors.xcassets */; };
 		97E604DD2580E37600FD24B2 /* DannyThiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */; };
 		97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E604DE2580E37600FD24B2 /* ContentView.swift */; };
 		97E604E12580E37800FD24B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E604E02580E37800FD24B2 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		9796553C2589DC9000F88D7B /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		9796553F2589E37600F88D7B /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		97965542258C808C00F88D7B /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		97965545258C8B9400F88D7B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		97E604D92580E37500FD24B2 /* DannyThiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DannyThiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DannyThiAppApp.swift; sourceTree = "<group>"; };
 		97E604DE2580E37600FD24B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,12 +91,14 @@
 				9796551D2589A28400F88D7B /* HomeView.swift */,
 				979655212589A3C200F88D7B /* ProjectsView.swift */,
 				9796553C2589DC9000F88D7B /* EditItemView.swift */,
+				97965542258C808C00F88D7B /* ProjectHeaderView.swift */,
 				9796553F2589E37600F88D7B /* Binding-OnChange.swift */,
 				9796551525899ADC00F88D7B /* DataController.swift */,
 				979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */,
 				979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */,
 				979655112589972D00F88D7B /* Main.xcdatamodeld */,
 				97E604E02580E37800FD24B2 /* Assets.xcassets */,
+				97965545258C8B9400F88D7B /* Colors.xcassets */,
 				97E604E52580E37800FD24B2 /* Info.plist */,
 				97E604E22580E37800FD24B2 /* Preview Content */,
 			);
@@ -164,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97965546258C8B9400F88D7B /* Colors.xcassets in Resources */,
 				97E604E42580E37800FD24B2 /* Preview Assets.xcassets in Resources */,
 				97E604E12580E37800FD24B2 /* Assets.xcassets in Resources */,
 			);
@@ -180,6 +187,7 @@
 				979655222589A3C200F88D7B /* ProjectsView.swift in Sources */,
 				979655132589972E00F88D7B /* Main.xcdatamodeld in Sources */,
 				9796553A2589D60C00F88D7B /* Project-CoreDataHelpers.swift in Sources */,
+				97965543258C808C00F88D7B /* ProjectHeaderView.swift in Sources */,
 				9796551625899ADC00F88D7B /* DataController.swift in Sources */,
 				97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */,
 				9796551E2589A28400F88D7B /* HomeView.swift in Sources */,
