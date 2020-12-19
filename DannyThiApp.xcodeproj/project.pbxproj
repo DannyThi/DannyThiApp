@@ -18,6 +18,7 @@
 		979655402589E37600F88D7B /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9796553F2589E37600F88D7B /* Binding-OnChange.swift */; };
 		97965543258C808C00F88D7B /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97965542258C808C00F88D7B /* ProjectHeaderView.swift */; };
 		97965546258C8B9400F88D7B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97965545258C8B9400F88D7B /* Colors.xcassets */; };
+		97965552258D952D00F88D7B /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97965551258D952D00F88D7B /* EditProjectView.swift */; };
 		97E604DD2580E37600FD24B2 /* DannyThiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */; };
 		97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E604DE2580E37600FD24B2 /* ContentView.swift */; };
 		97E604E12580E37800FD24B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E604E02580E37800FD24B2 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		9796553F2589E37600F88D7B /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		97965542258C808C00F88D7B /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		97965545258C8B9400F88D7B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		97965551258D952D00F88D7B /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		97E604D92580E37500FD24B2 /* DannyThiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DannyThiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DannyThiAppApp.swift; sourceTree = "<group>"; };
 		97E604DE2580E37600FD24B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		97965549258D946700F88D7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9796554A258D947D00F88D7B /* Support Views */,
+				97E604DE2580E37600FD24B2 /* ContentView.swift */,
+				9796551D2589A28400F88D7B /* HomeView.swift */,
+				979655212589A3C200F88D7B /* ProjectsView.swift */,
+				9796553C2589DC9000F88D7B /* EditItemView.swift */,
+				97965551258D952D00F88D7B /* EditProjectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9796554A258D947D00F88D7B /* Support Views */ = {
+			isa = PBXGroup;
+			children = (
+				97965542258C808C00F88D7B /* ProjectHeaderView.swift */,
+			);
+			path = "Support Views";
+			sourceTree = "<group>";
+		};
+		9796554B258D949600F88D7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9796553F2589E37600F88D7B /* Binding-OnChange.swift */,
+				979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */,
+				979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9796554C258D94BF00F88D7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				979655112589972D00F88D7B /* Main.xcdatamodeld */,
+				9796551525899ADC00F88D7B /* DataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9796554E258D94EC00F88D7B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		97E604D02580E37500FD24B2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,21 +135,14 @@
 		97E604DB2580E37500FD24B2 /* DannyThiApp */ = {
 			isa = PBXGroup;
 			children = (
-				979655182589A0A800F88D7B /* DannyThiApp.entitlements */,
-				97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */,
-				97E604DE2580E37600FD24B2 /* ContentView.swift */,
-				9796551D2589A28400F88D7B /* HomeView.swift */,
-				979655212589A3C200F88D7B /* ProjectsView.swift */,
-				9796553C2589DC9000F88D7B /* EditItemView.swift */,
-				97965542258C808C00F88D7B /* ProjectHeaderView.swift */,
-				9796553F2589E37600F88D7B /* Binding-OnChange.swift */,
-				9796551525899ADC00F88D7B /* DataController.swift */,
-				979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */,
-				979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */,
-				979655112589972D00F88D7B /* Main.xcdatamodeld */,
+				97965549258D946700F88D7B /* Views */,
+				9796554C258D94BF00F88D7B /* Model */,
+				9796554B258D949600F88D7B /* Extensions */,
+				9796554E258D94EC00F88D7B /* SupportingFiles */,
 				97E604E02580E37800FD24B2 /* Assets.xcassets */,
 				97965545258C8B9400F88D7B /* Colors.xcassets */,
 				97E604E52580E37800FD24B2 /* Info.plist */,
+				979655182589A0A800F88D7B /* DannyThiApp.entitlements */,
 				97E604E22580E37800FD24B2 /* Preview Content */,
 			);
 			path = DannyThiApp;
@@ -191,6 +234,7 @@
 				9796551625899ADC00F88D7B /* DataController.swift in Sources */,
 				97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */,
 				9796551E2589A28400F88D7B /* HomeView.swift in Sources */,
+				97965552258D952D00F88D7B /* EditProjectView.swift in Sources */,
 				97E604DD2580E37600FD24B2 /* DannyThiAppApp.swift in Sources */,
 				979655372589D5A700F88D7B /* Item-CoreDataHelpers.swift in Sources */,
 				9796553D2589DC9000F88D7B /* EditItemView.swift in Sources */,
