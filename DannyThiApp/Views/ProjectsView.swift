@@ -21,60 +21,66 @@ struct ProjectsView: View {
    
    var body: some View {
       NavigationView {
-         List {
-            ForEach(projects.wrappedValue) { project in
-               Section(header: ProjectHeaderView(project: project)) {
-                  ForEach(project.projectItems(using: sortOrder)) { item in
-                     ItemRowView(item: item)
-                  }
-                  .onDelete { offsets in
-                     let allItems = project.projectItems
-                     
-                     for offset in offsets {
-                        let item = allItems[offset]
-                        dataController.delete(item)
-                     }
-                     dataController.save()
-                  }
-                  
-                  if showClosedProjects == false {
-                     Button {
-                        withAnimation {
-                           let item = Item(context: managedObjectContext)
-                           item.project = project
-                           item.creationDate = Date()
+         Group {
+            if projects.wrappedValue.count == 0 {
+               Text("There's nothing here right now.")
+                  .foregroundColor(.secondary)
+            } else {
+               List {
+                  ForEach(projects.wrappedValue) { project in
+                     Section(header: ProjectHeaderView(project: project)) {
+                        ForEach(project.projectItems(using: sortOrder)) { item in
+                           ItemRowView(project: project, item: item)
+                        }
+                        .onDelete { offsets in
+                           let allItems = project.projectItems(using: sortOrder)
+                           
+                           for offset in offsets {
+                              let item = allItems[offset]
+                              dataController.delete(item)
+                           }
                            dataController.save()
                         }
+                        
+                        if showClosedProjects == false {
+                           Button {
+                              withAnimation {
+                                 let item = Item(context: managedObjectContext)
+                                 item.project = project
+                                 item.creationDate = Date()
+                                 dataController.save()
+                              }
+                           } label: {
+                              Label("Add new Item", systemImage: "plus")
+                           }
+                        }
+                     }
+                  }
+               }
+               .listStyle(InsetGroupedListStyle())
+               .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
+               .toolbar {
+                  ToolbarItem(placement: .navigationBarTrailing) {
+                     if showClosedProjects == false {
+                        Button {
+                           withAnimation {
+                              let project = Project(context: managedObjectContext)
+                              project.closed = false
+                              project.creationDate = Date()
+                              dataController.save()
+                           }
+                        } label: {
+                           Label("Add Project", systemImage: "plus")
+                        }
+                     }
+                  }
+                  ToolbarItem(placement: .navigationBarLeading) {
+                     Button {
+                        showingSortOrder.toggle()
                      } label: {
-                        Label("Add new Item", systemImage: "plus")
+                        Label("Sort", systemImage: "arrow.up.arrow.down")
                      }
                   }
-               }
-            }
-         }
-         .listStyle(InsetGroupedListStyle())
-         .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
-         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-               if showClosedProjects == false {
-                  Button {
-                     withAnimation {
-                        let project = Project(context: managedObjectContext)
-                        project.closed = false
-                        project.creationDate = Date()
-                        dataController.save()
-                     }
-                  } label: {
-                     Label("Add Project", systemImage: "plus")
-                  }
-               }
-            }
-            
-            ToolbarItem(placement: .navigationBarLeading) {
-               Button {
-                  showingSortOrder.toggle()
-               } label: {
-                  Label("Sort", systemImage: "arrow.up.arrow.down")
                }
             }
          }
@@ -85,6 +91,7 @@ struct ProjectsView: View {
                .default(Text("Title")) { sortOrder = .title }
             ])
          }
+         SelectSomethingView()
       }
    }
    

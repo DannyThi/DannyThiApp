@@ -42,7 +42,7 @@ struct EditItemView: View {
    
    func update() {
       item.project?.objectWillChange.send()
-
+      
       item.title = title
       item.detail = detail
       item.priority = Int16(priority)
@@ -59,17 +59,11 @@ struct EditItemView: View {
    }
 }
 
-struct ItemRowView: View {
-    @ObservedObject var item: Item
-    var body: some View {
-        NavigationLink(destination: EditItemView(item: item)) {
-            Text(item.itemTitle)
-        }
-    }
-}
-
-struct ItemRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemRowView(item: Item.example)
-    }
+struct EditItemView_Previews: PreviewProvider {
+   static var dataController = DataController.preview
+   static var previews: some View {
+      ProjectsView(showClosedProjects: false)
+         .environment(\.managedObjectContext, dataController.container.viewContext)
+         .environmentObject(dataController)
+   }
 }

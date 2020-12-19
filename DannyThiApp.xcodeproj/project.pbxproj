@@ -24,6 +24,8 @@
 		97E604E12580E37800FD24B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E604E02580E37800FD24B2 /* Assets.xcassets */; };
 		97E604E42580E37800FD24B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E604E32580E37800FD24B2 /* Preview Assets.xcassets */; };
 		97FE9652258E1A78002CC1D8 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */; };
+		97FE9655258E2B53002CC1D8 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9654258E2B53002CC1D8 /* ItemRowView.swift */; };
+		97FE9659258E39C2002CC1D8 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9658258E39C2002CC1D8 /* SelectSomethingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		97E604E32580E37800FD24B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97E604E52580E37800FD24B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		97FE9654258E2B53002CC1D8 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		97FE9658258E39C2002CC1D8 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				97965542258C808C00F88D7B /* ProjectHeaderView.swift */,
+				97FE9654258E2B53002CC1D8 /* ItemRowView.swift */,
+				97FE9658258E39C2002CC1D8 /* SelectSomethingView.swift */,
 			);
 			path = "Support Views";
 			sourceTree = "<group>";
@@ -229,11 +235,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97FE9655258E2B53002CC1D8 /* ItemRowView.swift in Sources */,
 				979655402589E37600F88D7B /* Binding-OnChange.swift in Sources */,
 				979655222589A3C200F88D7B /* ProjectsView.swift in Sources */,
 				979655132589972E00F88D7B /* Main.xcdatamodeld in Sources */,
 				9796553A2589D60C00F88D7B /* Project-CoreDataHelpers.swift in Sources */,
 				97965543258C808C00F88D7B /* ProjectHeaderView.swift in Sources */,
+				97FE9659258E39C2002CC1D8 /* SelectSomethingView.swift in Sources */,
 				9796551625899ADC00F88D7B /* DataController.swift in Sources */,
 				97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */,
 				9796551E2589A28400F88D7B /* HomeView.swift in Sources */,
