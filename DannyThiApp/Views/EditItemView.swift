@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-struct ItemRowView: View {
-    @ObservedObject var item: Item
-
-    var body: some View {
-        NavigationLink(destination: EditItemView(item: item)) {
-            Text(item.itemTitle)
-        }
-    }
-}
-
 struct EditItemView: View {
    let item: Item
    @EnvironmentObject var dataController: DataController
@@ -51,11 +41,12 @@ struct EditItemView: View {
    }
    
    func update() {
+      item.project?.objectWillChange.send()
+
       item.title = title
       item.detail = detail
       item.priority = Int16(priority)
       item.completed = completed
-      item.project?.objectWillChange.send()
    }
    
    init(item: Item) {
@@ -66,6 +57,15 @@ struct EditItemView: View {
       _priority = State(wrappedValue: Int(item.priority))
       _completed = State(wrappedValue: item.completed)
    }
+}
+
+struct ItemRowView: View {
+    @ObservedObject var item: Item
+    var body: some View {
+        NavigationLink(destination: EditItemView(item: item)) {
+            Text(item.itemTitle)
+        }
+    }
 }
 
 struct ItemRowView_Previews: PreviewProvider {
