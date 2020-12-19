@@ -20,6 +20,10 @@ extension Item {
       creationDate ?? Date()
    }
    
+   enum SortOrder {
+      case optimised, title, creationDate
+   }
+   
    static var example: Item {
       let controller = DataController(inMemory: true)
       let viewContext = controller.container.viewContext

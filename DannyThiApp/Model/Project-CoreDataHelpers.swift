@@ -21,6 +21,10 @@ extension Project {
    }
    
    var projectItems: [Item] {
+      self.items?.allObjects as? [Item] ?? []
+   }
+   
+   var projectItemsDefaultSorted: [Item] {
       let itemsArray = items?.allObjects as? [Item] ?? []
       return itemsArray.sorted { first, second in
          if first.completed == false {
@@ -50,6 +54,19 @@ extension Project {
        let completedItems = originalItems.filter(\.completed)
        return Double(completedItems.count) / Double(originalItems.count)
    }
+   
+   
+   func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+      switch sortOrder {
+      case .title:
+         return projectItems.sorted(by: \Item.itemTitle)
+      case .creationDate:
+         return projectItems.sorted(by: \Item.itemCreationDate)
+      case .optimised:
+         return projectItemsDefaultSorted
+      }
+   }
+   
    
    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold",
                         "Green", "Teal", "Light Blue", "Dark Blue",

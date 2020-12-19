@@ -23,6 +23,7 @@
 		97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E604DE2580E37600FD24B2 /* ContentView.swift */; };
 		97E604E12580E37800FD24B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E604E02580E37800FD24B2 /* Assets.xcassets */; };
 		97E604E42580E37800FD24B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E604E32580E37800FD24B2 /* Preview Assets.xcassets */; };
+		97FE9652258E1A78002CC1D8 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		97E604E02580E37800FD24B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E604E32580E37800FD24B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97E604E52580E37800FD24B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9796553F2589E37600F88D7B /* Binding-OnChange.swift */,
-				979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */,
-				979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */,
+				97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -103,6 +104,8 @@
 			children = (
 				979655112589972D00F88D7B /* Main.xcdatamodeld */,
 				9796551525899ADC00F88D7B /* DataController.swift */,
+				979655362589D5A700F88D7B /* Item-CoreDataHelpers.swift */,
+				979655392589D60C00F88D7B /* Project-CoreDataHelpers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */,
 				9796551E2589A28400F88D7B /* HomeView.swift in Sources */,
 				97965552258D952D00F88D7B /* EditProjectView.swift in Sources */,
+				97FE9652258E1A78002CC1D8 /* Sequence-Sorting.swift in Sources */,
 				97E604DD2580E37600FD24B2 /* DannyThiAppApp.swift in Sources */,
 				979655372589D5A700F88D7B /* Item-CoreDataHelpers.swift in Sources */,
 				9796553D2589DC9000F88D7B /* EditItemView.swift in Sources */,
