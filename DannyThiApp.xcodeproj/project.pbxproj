@@ -26,6 +26,10 @@
 		97FE9652258E1A78002CC1D8 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */; };
 		97FE9655258E2B53002CC1D8 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9654258E2B53002CC1D8 /* ItemRowView.swift */; };
 		97FE9659258E39C2002CC1D8 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9658258E39C2002CC1D8 /* SelectSomethingView.swift */; };
+		97FE965C258ED328002CC1D8 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE965B258ED327002CC1D8 /* Bundle-Decodable.swift */; };
+		97FE965F258ED9A5002CC1D8 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 97FE965E258ED9A5002CC1D8 /* Awards.json */; };
+		97FE9662258EDB02002CC1D8 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9661258EDB02002CC1D8 /* Award.swift */; };
+		97FE9665258EE786002CC1D8 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE9664258EE786002CC1D8 /* AwardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		97FE9654258E2B53002CC1D8 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		97FE9658258E39C2002CC1D8 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
+		97FE965B258ED327002CC1D8 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		97FE965E258ED9A5002CC1D8 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
+		97FE9661258EDB02002CC1D8 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
+		97FE9664258EE786002CC1D8 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 				979655212589A3C200F88D7B /* ProjectsView.swift */,
 				9796553C2589DC9000F88D7B /* EditItemView.swift */,
 				97965551258D952D00F88D7B /* EditProjectView.swift */,
+				97FE9664258EE786002CC1D8 /* AwardsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +110,7 @@
 			children = (
 				9796553F2589E37600F88D7B /* Binding-OnChange.swift */,
 				97FE9651258E1A78002CC1D8 /* Sequence-Sorting.swift */,
+				97FE965B258ED327002CC1D8 /* Bundle-Decodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 		9796554E258D94EC00F88D7B /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				97FE965E258ED9A5002CC1D8 /* Awards.json */,
 				97E604DC2580E37500FD24B2 /* DannyThiAppApp.swift */,
+				97FE9661258EDB02002CC1D8 /* Award.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -223,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97965546258C8B9400F88D7B /* Colors.xcassets in Resources */,
+				97FE965F258ED9A5002CC1D8 /* Awards.json in Resources */,
 				97E604E42580E37800FD24B2 /* Preview Assets.xcassets in Resources */,
 				97E604E12580E37800FD24B2 /* Assets.xcassets in Resources */,
 			);
@@ -237,15 +250,18 @@
 			files = (
 				97FE9655258E2B53002CC1D8 /* ItemRowView.swift in Sources */,
 				979655402589E37600F88D7B /* Binding-OnChange.swift in Sources */,
+				97FE9665258EE786002CC1D8 /* AwardsView.swift in Sources */,
 				979655222589A3C200F88D7B /* ProjectsView.swift in Sources */,
 				979655132589972E00F88D7B /* Main.xcdatamodeld in Sources */,
 				9796553A2589D60C00F88D7B /* Project-CoreDataHelpers.swift in Sources */,
 				97965543258C808C00F88D7B /* ProjectHeaderView.swift in Sources */,
 				97FE9659258E39C2002CC1D8 /* SelectSomethingView.swift in Sources */,
+				97FE9662258EDB02002CC1D8 /* Award.swift in Sources */,
 				9796551625899ADC00F88D7B /* DataController.swift in Sources */,
 				97E604DF2580E37600FD24B2 /* ContentView.swift in Sources */,
 				9796551E2589A28400F88D7B /* HomeView.swift in Sources */,
 				97965552258D952D00F88D7B /* EditProjectView.swift in Sources */,
+				97FE965C258ED328002CC1D8 /* Bundle-Decodable.swift in Sources */,
 				97FE9652258E1A78002CC1D8 /* Sequence-Sorting.swift in Sources */,
 				97E604DD2580E37600FD24B2 /* DannyThiAppApp.swift in Sources */,
 				979655372589D5A700F88D7B /* Item-CoreDataHelpers.swift in Sources */,
