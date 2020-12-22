@@ -46,6 +46,35 @@ class DataController: ObservableObject {
    }
 }
 
+// MARK:- AWARDS
+
+extension DataController {
+   func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
+      return (try? container.viewContext.count(for: fetchRequest)) ?? 0
+   }
+   
+   func hasEarned(award: Award) -> Bool {
+      switch award.criterion {
+      case "items":
+         let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
+         let awardCount = self.count(for: fetchRequest)
+         return awardCount >= award.value
+         
+      case "complete":
+         let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
+         fetchRequest.predicate = NSPredicate(format: "completed = true")
+         let awardCount = self.count(for: fetchRequest)
+         return awardCount >= award.value
+         
+      default:
+         // fatalError("Unknown award criterion \(award.criterion).")
+         return false
+      }
+   }
+}
+
+// MARK: - PREVIEWS AND SAMPLES
+
 extension DataController {
    func createSampleData() throws {
       let viewContext = container.viewContext
