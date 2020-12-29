@@ -9,7 +9,7 @@ import Foundation
 
 extension Item {
    var itemTitle: String {
-      title ?? "New Item"
+      title ?? NSLocalizedString("New Item", comment: "Create a ne item")
    }
    
    var itemDetail: String {
