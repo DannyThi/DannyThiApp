@@ -99,6 +99,7 @@
 				979655212589A3C200F88D7B /* ProjectsView.swift */,
 				9796553C2589DC9000F88D7B /* EditItemView.swift */,
 				97965551258D952D00F88D7B /* EditProjectView.swift */,
+				97FE9664258EE786002CC1D8 /* AwardsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,7 +128,6 @@
 		9796554C258D94BF00F88D7B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				97FE9664258EE786002CC1D8 /* AwardsView.swift */,
 				979655112589972D00F88D7B /* Main.xcdatamodeld */,
 				97FE9661258EDB02002CC1D8 /* Award.swift */,
 				9796551525899ADC00F88D7B /* DataController.swift */,
