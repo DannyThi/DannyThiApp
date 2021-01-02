@@ -5,7 +5,7 @@
 //  Created by Hai Long Danny Thi on 2020/12/16.
 //
 
-import Foundation
+import SwiftUI
 
 extension Project {
    var projectTitle: String {
@@ -55,6 +55,9 @@ extension Project {
        return Double(completedItems.count) / Double(originalItems.count)
    }
    
+   var label: LocalizedStringKey {
+      return LocalizedStringKey("\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete.")
+   }
    
    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
       switch sortOrder {
